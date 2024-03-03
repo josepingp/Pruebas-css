@@ -1,0 +1,121 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #0A425F;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    border-bottom: 3px double #ECB362;
+    padding: 20px 15px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.banner {
+    width: 200px;
+    box-shadow: -5px -5px 10px  #083349;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: fantasy;
+    margin: 10px;
+}
+
+#form-container {
+    max-width: 600px;
+    min-width: 300px;
+    color: #fff;
+    align-items: start;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+fieldset {
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-bottom: 2px double #ECB362;
+    margin-bottom: 15PX;
+}
+
+label {
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+}
+
+input {
+    min-width: 60%;
+    height: 2em;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    background-color: #083349;
+    color: #fff;
+    border: 1px solid #0A425F;
+    outline: #0A425F;
+}
+
+#country {
+    height: 2.5em;
+    margin-bottom: 10px;
+    background-color: #083349;
+    color: #777;
+    font-size: 1rem;
+}
+
+option {
+    color: #fff;
+    background-color: #0A425F;
+}
+
+#account {
+    align-items: start;
+    gap: 10px;
+}
+
+#account label {
+    font-size: medium;
+}
+
+legend {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+input[type='radio'], input[type='checkbox'] {
+    height: 15px;
+    min-width: unset;
+}
+
+#terms {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    border-bottom: 3px double #ECB362;
+    padding: 20px 15px;
+    max-width: 600px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: red;
+}
+
+#send-btn {
+    min-width: 25%;
+    max-width: 25%;
+}

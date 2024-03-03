@@ -1,0 +1,171 @@
+
+
+/* Cuerpo del poring */
+#slime {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    top: 50vh;
+    left: 50vw;
+    background: radial-gradient(
+        farthest-corner ellipse at 100% 0% in oklch, 
+        rgba(255, 255, 255, .9) 0%, rgba(0, 239, 71,  .8) 27% 79%, rgba(0, 255, 0, .8) 100%
+        );
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    box-shadow: 0 2px 10px black ;
+    animation: jumping cubic-bezier(1, 0.85, 0.5, 0.22);
+    animation-duration: 2s;;
+}
+#ojoi {
+    position: absolute;
+    background-color: black;
+    background: radial-gradient(ellipse at center,  rgba(69,72,77,.8) 0%,rgba(0,0,0,.8) 96%);
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    top: 40px;
+    left: 60px;
+    animation: poring-grow;
+    animation-duration: 2s;
+}
+#ojod {
+    animation: poring-grow;
+    animation-duration: 2s;
+    position: absolute;
+    background: radial-gradient(ellipse at center,  rgba(69,72,77,.8) 0%,rgba(0,0,0,.8) 96%);
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    top: 40px;
+    right: 60px;
+}
+#boca {
+    width: 100px;
+    height: 30px;
+    border-radius: 100%;
+    border-bottom: 2px solid black;
+    box-shadow: 0 2px 1px 1px;
+    position: absolute;
+    top: 80px;
+    left: 75px;
+}
+
+#slime:hover #love {
+    content: url(/poring/Corazón\ PNG\ Animado\ -\ Génesis\ Toxical\ \(3\).png);
+    animation: love forwards;
+    animation-duration: 3s;
+    position: relative;
+    display: none;
+    left:-20px;
+    top: -10px;
+}
+#slime:hover #love2 {
+    animation: love2 forwards;
+    animation-duration: 3s;
+    content: url(/poring/Corazón\ PNG\ Animado\ -\ Génesis\ Toxical\ \(3\).png);
+    position: absolute;
+    display: none;
+    right: 0;
+}
+#slime:hover {
+    cursor: grab;
+}
+
+
+
+@keyframes poring-grow {
+    0% {
+            transform: scale(0);
+        }
+    60% {   
+        transform: scale(1);
+    }   
+    70% {
+        transform: scale(1.2);    
+    }
+    80%{
+        transform: scale(1);    
+    }
+    90%{
+        transform: scale(1.1);    
+    }
+    100%{
+        transform: scale(1);    
+    }
+}
+
+@keyframes jumping {
+    0% {
+        transform: scale(1);
+    }
+    20%{
+        transform: scaley(0.8) scaleX(1.2);
+        box-shadow: 0 0px 10px black ;
+    }
+    40%{ 
+        transform: scaleX(0.6) scaleY(1.5) translateY(-50px);
+        box-shadow: 0 30px 10px black ;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+    50%{ 
+        transform: scaleX(0.6) scaleY(1.5) translateY(-100px);
+    }
+    60%{
+        transform: scaleX(0.6) scaleY(1.5) translateY(-100px);
+        box-shadow: 0 50px 10px black ;
+    }
+    80%{
+        box-shadow: 0 20px 10px black ;
+    }
+    90% {
+        transform: scaley(0.8) scaleX(1.2);
+        box-shadow: 0 0px 10px black ;
+    }
+}
+
+@keyframes love {
+    from{
+        transform: translateX(0) scale(1);
+        display: block;
+    }
+    to{
+        transform: translateX(-100px) scale(3);
+        display: none;
+    }
+}
+@keyframes love2 {
+    from{
+        transform: translateX(0) scale(1);
+        display: block;
+    }
+    to{
+        transform: translateX(150px) scale(3);
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

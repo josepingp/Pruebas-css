@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Union Latina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="120px-BANDERA_LATINA.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="120px-BANDERA_LATINA.png" alt="bandera" class="banner">
+        <h1 class="title">Union Latina</h1>
+        <p class="descripcion">Registrate en Union Latina y conecta con latinos de todo el mundo.<br>Unete a nosotros y
+            disfruta de nuestra cultura.</p>
+    </header>
+    <main class="container">
+        <form action="" method="post" id="form-container">
+            <fieldset >
+                <label for="username">
+                    Nombre de usuario
+                </label>
+                <input type="text" id="username" placeholder="El_Mandinga" required>
+                <label for="email">
+                    e-mail
+                </label>
+                <input type="email" id="email" placeholder="garcilaso@latinmail.com" required>
+                <label for="password">
+                    Contraseña
+                </label>
+                <input type="password" id="username" placeholder="***********" pattern="[a-z0-5]{8,}" required>
+            </fieldset>
+            <fieldset>
+                <label for="first-name">
+                    Nombre
+                </label>
+                <input type="text" id="first-name" placeholder="Garcilaso" required>
+                <label for="second-name">
+                    Apellidos
+                </label>
+                <input type="text" id="second-name" placeholder="De La Vega" required>
+                <label for="age">
+                    Fecha de nacimiento
+                </label>
+                <input type="date" id="age" required>
+                <label for="country"> Pais de origen
+                    <select name="country" id="country">        
+                        <option value="">Selecciona uno</option>
+                        <option value="ARG">Argentina</option>
+                        <option value="BOL">Bolivia</option>
+                        <option value="CHI">Chile</option>
+                        <option value="COL">Colombia</option>
+                        <option value="CRI">Costa Rica</option>
+                        <option value="CUB">Cuba</option>
+                        <option value="ECU">Ecuador</option>
+                        <option value="SAL">El Salvador</option>
+                        <option value="ESP">España</option>
+                        <option value="GUA">Guatemala</option>
+                        <option value="GUi">Guinea Ecuatorial</option>
+                        <option value="HON">Honduras</option>
+                        <option value="MEX">México</option>
+                        <option value="NIC">Nicaragua</option>
+                        <option value="PAN">Panamá</option>
+                        <option value="PAR">Paraguay</option>
+                        <option value="PER">Perú</option>
+                        <option value="RIC">Puerto Rico</option>
+                        <option value="DOM">República Dominicana</option>
+                        <option value="URU">Uruguay</option>
+                        <option value="VEN">Venezuela</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset id="account">
+                <legend>Quién podra ver tu perfil</legend>
+                <label for="private">
+                    <input type="radio" name="perfil" id="private">
+                    Perfil privado (Solo lo veran tus amigos)
+                </label>
+                <label for="semi-public">
+                    <input type="radio" name="perfil" id="semi-public">
+                    Perfil Semipublico (Lo podran ver tus amigos y los amigos de tus amigos)
+                </label>
+                <label for="public">
+                    <input type="radio" name="perfil" id="public">
+                    Publico (Todo el mundo lo puede ver)
+                </label>
+            </fieldset>
+            <div id="terms">
+                <label for="terms-checker">Acepto los <a href="">terminos y condiciones</a> del servicio.
+                <input type="checkbox" id="terms-checker">
+                </label>
+                <input type="submit" id="send-btn">
+            </div>
+        </form>
+    </main>
+</body>
+</html
